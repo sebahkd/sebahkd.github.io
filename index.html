@@ -1,49 +1,256 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Sebastian Plazas - AI Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sebastian Plazas | Data Scientist</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
 <style>
-body{
-font-family: Arial;
-margin:40px;
-background:#f5f5f5;
-}
-h1{
-color:#2c3e50;
-}
-.card{
-background:white;
-padding:20px;
-margin:20px 0;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+html{
+scroll-behavior:smooth;
 }
 </style>
+
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-<h1>Sebastian Plazas</h1>
-<p>AI Engineer | Computer Vision | Machine Learning</p>
+<!-- NAVBAR -->
 
-<div class="card">
-<h2>Projects</h2>
-<ul>
-<li>3D Reconstruction with COLMAP</li>
-<li>Anomaly Detection in Clothing</li>
-<li>Smart Cities Traffic Prediction</li>
+<nav class="bg-white shadow-md fixed w-full z-10">
+<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between">
+
+<h1 class="font-bold text-xl">Sebastian Plazas</h1>
+
+<div class="space-x-6">
+<a href="#about" class="hover:text-blue-600">About</a>
+<a href="#projects" class="hover:text-blue-600">Projects</a>
+<a href="#skills" class="hover:text-blue-600">Skills</a>
+<a href="#cv" class="hover:text-blue-600">CV</a>
+<a href="#contact" class="hover:text-blue-600">Contact</a>
+</div>
+
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="pt-32 pb-20 text-center">
+
+<h2 class="text-5xl font-bold mb-6">
+Applied Mathematician & Data Scientist
+</h2>
+
+<p class="max-w-2xl mx-auto text-lg text-gray-600">
+I specialize in machine learning, computer vision and mathematical modeling.
+My work focuses on transforming complex data into intelligent systems that
+solve real-world problems.
+</p>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="max-w-5xl mx-auto px-6 py-16">
+
+<h2 class="text-3xl font-bold mb-8">About Me</h2>
+
+<p class="text-lg leading-relaxed text-gray-700">
+
+I am a computer scientist and applied mathematician focused on data science,
+machine learning and computer vision. My work combines mathematical modeling,
+algorithm design and data analysis to develop intelligent solutions for
+complex problems.
+
+I have experience building predictive models, computer vision systems,
+optimization algorithms and data-driven platforms.
+
+My interests include:
+
+• Machine Learning  
+• Computer Vision  
+• Mathematical Modeling  
+• Smart Cities Analytics  
+• Data-driven Decision Systems  
+
+</p>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="bg-white py-16">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold mb-10">Projects</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-gray-50 p-6 rounded-xl shadow">
+
+<h3 class="font-bold text-xl mb-2">
+3D Reconstruction with COLMAP
+</h3>
+
+<p class="text-gray-600">
+Structure-from-Motion pipeline for reconstructing 3D scenes from images
+using COLMAP and Python.
+</p>
+
+</div>
+
+<div class="bg-gray-50 p-6 rounded-xl shadow">
+
+<h3 class="font-bold text-xl mb-2">
+Clothing Anomaly Detection
+</h3>
+
+<p class="text-gray-600">
+Computer vision system to detect defects in clothing using classical
+image processing and machine learning techniques.
+</p>
+
+</div>
+
+<div class="bg-gray-50 p-6 rounded-xl shadow">
+
+<h3 class="font-bold text-xl mb-2">
+Smart Cities Predictive Analytics
+</h3>
+
+<p class="text-gray-600">
+Data-driven models for urban analytics and predictive decision support
+systems for smart city platforms.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="max-w-5xl mx-auto px-6 py-16">
+
+<h2 class="text-3xl font-bold mb-10">Skills</h2>
+
+<div class="grid md:grid-cols-3 gap-8 text-gray-700">
+
+<div>
+
+<h3 class="font-semibold mb-3">Programming</h3>
+
+<ul class="space-y-1">
+<li>Python</li>
+<li>SQL</li>
+<li>JavaScript</li>
+<li>C++</li>
 </ul>
+
 </div>
 
-<div class="card">
-<h2>Skills</h2>
-<p>Python, Machine Learning, Computer Vision, GitHub</p>
+<div>
+
+<h3 class="font-semibold mb-3">Data Science</h3>
+
+<ul class="space-y-1">
+<li>Machine Learning</li>
+<li>Deep Learning</li>
+<li>Statistical Modeling</li>
+<li>Data Visualization</li>
+</ul>
+
 </div>
 
-<div class="card">
-<h2>Contact</h2>
-<p>Email: tuemail@email.com</p>
+<div>
+
+<h3 class="font-semibold mb-3">Tools</h3>
+
+<ul class="space-y-1">
+<li>TensorFlow / PyTorch</li>
+<li>OpenCV</li>
+<li>Scikit-learn</li>
+<li>Git / Docker</li>
+</ul>
+
 </div>
+
+</div>
+
+</section>
+
+<!-- CV -->
+
+<section id="cv" class="bg-white py-16">
+
+<div class="max-w-4xl mx-auto text-center px-6">
+
+<h2 class="text-3xl font-bold mb-6">Curriculum Vitae</h2>
+
+<p class="text-gray-600 mb-6">
+You can download my full CV below.
+</p>
+
+<a href="cv.pdf"
+class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+
+Download CV
+
+</a>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="max-w-4xl mx-auto px-6 py-16 text-center">
+
+<h2 class="text-3xl font-bold mb-6">Contact</h2>
+
+<p class="text-gray-600 mb-6">
+Interested in collaborating or discussing data science opportunities?
+Feel free to reach out.
+</p>
+
+<div class="space-y-2">
+
+<p>Email: your.email@email.com</p>
+
+<p>
+LinkedIn:
+<a href="#" class="text-blue-600">
+linkedin.com/in/yourprofile
+</a>
+</p>
+
+<p>
+GitHub:
+<a href="#" class="text-blue-600">
+github.com/yourusername
+</a>
+</p>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="bg-gray-900 text-gray-400 text-center py-6">
+
+<p>
+© 2026 Sebastian Plazas — Data Scientist Portfolio
+</p>
+
+</footer>
 
 </body>
 </html>
