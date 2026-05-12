@@ -12,6 +12,25 @@
 html{
 scroll-behavior:smooth;
 }
+
+.gradient-text{
+background: linear-gradient(to right, #2563eb, #06b6d4);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.glow{
+box-shadow: 0 10px 40px rgba(37,99,235,0.15);
+}
+
+.card-hover{
+transition: all 0.3s ease;
+}
+
+.card-hover:hover{
+transform: translateY(-8px);
+box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
 </style>
 
 </head>
@@ -21,16 +40,19 @@ scroll-behavior:smooth;
 <!-- NAVBAR -->
 
 <nav class="bg-white shadow-md fixed w-full z-10">
-<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between">
+<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-<h1 class="font-bold text-xl">Sebastian Plazas</h1>
+<h1 class="font-bold text-2xl gradient-text">
+Sebastian Plazas
+</h1>
 
-<div class="space-x-6">
-<a href="#about" class="hover:text-blue-600">About</a>
-<a href="#projects" class="hover:text-blue-600">Projects</a>
-<a href="#skills" class="hover:text-blue-600">Skills</a>
-<a href="#cv" class="hover:text-blue-600">CV</a>
-<a href="#contact" class="hover:text-blue-600">Contact</a>
+<div class="space-x-6 hidden md:flex">
+<a href="#about" class="hover:text-blue-600 transition">About</a>
+<a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+<a href="#achievements" class="hover:text-blue-600 transition">Achievements</a>
+<a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+<a href="#cv" class="hover:text-blue-600 transition">CV</a>
+<a href="#contact" class="hover:text-blue-600 transition">Contact</a>
 </div>
 
 </div>
@@ -38,27 +60,94 @@ scroll-behavior:smooth;
 
 <!-- HERO -->
 
-<section class="pt-32 pb-20 text-center">
+<section class="pt-36 pb-24 bg-gradient-to-br from-blue-50 to-cyan-50">
 
-<h2 class="text-5xl font-bold mb-6">
-Applied Mathematician & Data Scientist
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+
+<div>
+
+<p class="uppercase tracking-widest text-blue-600 font-semibold mb-4">
+Sebastian Plazas | Data Scientist
+</p>
+
+<h2 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+Building intelligent systems with
+<span class="gradient-text">AI, Data & Mathematics</span>
 </h2>
 
-<p class="max-w-2xl mx-auto text-lg text-gray-600">
-I specialize in machine learning, computer vision and mathematical modeling.
-My work focuses on transforming complex data into intelligent systems that
-solve real-world problems.
+<p class="text-lg text-gray-600 leading-relaxed mb-8">
+Applied mathematician and data scientist specialized in machine learning,
+computer vision and predictive analytics. I develop high-impact intelligent
+systems capable of solving real-world problems through data-driven decisions,
+automation and advanced analytics.
 </p>
+
+<div class="flex flex-wrap gap-4">
+
+<a href="#projects"
+class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition shadow-lg">
+
+View Projects
+
+</a>
+
+<a href="#contact"
+class="border border-blue-600 text-blue-600 px-6 py-3 rounded-xl hover:bg-blue-50 transition">
+
+Let's Work Together
+
+</a>
+
+</div>
+
+<div class="grid grid-cols-3 gap-6 mt-12">
+
+<div>
+<h3 class="text-3xl font-bold text-blue-600">5+</h3>
+<p class="text-gray-600">AI Projects</p>
+</div>
+
+<div>
+<h3 class="text-3xl font-bold text-blue-600">3D</h3>
+<p class="text-gray-600">Vision Systems</p>
+</div>
+
+<div>
+<h3 class="text-3xl font-bold text-blue-600">ML</h3>
+<p class="text-gray-600">Predictive Models</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="flex justify-center">
+
+<div class="bg-white p-6 rounded-3xl shadow-2xl glow">
+
+<div class="w-80 h-96 bg-gray-200 rounded-2xl flex items-center justify-center text-gray-500 text-center">
+YOUR PHOTO HERE
+<br><br>
+Professional Portrait
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 <!-- ABOUT -->
 
-<section id="about" class="max-w-5xl mx-auto px-6 py-16">
+<section id="about" class="max-w-5xl mx-auto px-6 py-20">
 
-<h2 class="text-3xl font-bold mb-8">About Me</h2>
+<h2 class="text-4xl font-bold mb-8">
+About Me
+</h2>
 
-<p class="text-lg leading-relaxed text-gray-700">
+<p class="text-lg leading-relaxed text-gray-700 mb-8">
 
 I am a computer scientist and applied mathematician focused on data science,
 machine learning and computer vision. My work combines mathematical modeling,
@@ -66,69 +155,255 @@ algorithm design and data analysis to develop intelligent solutions for
 complex problems.
 
 I have experience building predictive models, computer vision systems,
-optimization algorithms and data-driven platforms.
-
-My interests include:
-
-• Machine Learning  
-• Computer Vision  
-• Mathematical Modeling  
-• Smart Cities Analytics  
-• Data-driven Decision Systems  
+optimization algorithms and data-driven platforms capable of improving
+decision-making processes and generating measurable impact.
 
 </p>
+
+<div class="grid md:grid-cols-2 gap-8">
+
+<div class="bg-white p-6 rounded-2xl shadow-sm">
+<h3 class="font-bold text-xl mb-4 text-blue-600">
+Core Expertise
+</h3>
+
+<ul class="space-y-2 text-gray-700">
+<li>• Machine Learning</li>
+<li>• Computer Vision</li>
+<li>• Mathematical Modeling</li>
+<li>• Smart Cities Analytics</li>
+<li>• Predictive Analytics</li>
+<li>• Intelligent Decision Systems</li>
+</ul>
+</div>
+
+<div class="bg-white p-6 rounded-2xl shadow-sm">
+<h3 class="font-bold text-xl mb-4 text-blue-600">
+Professional Focus
+</h3>
+
+<p class="text-gray-700 leading-relaxed">
+Focused on transforming complex data into scalable and intelligent
+solutions. Passionate about combining mathematics, AI and software
+engineering to optimize processes, automate systems and generate
+high-value insights for organizations and society.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
 <!-- PROJECTS -->
 
-<section id="projects" class="bg-white py-16">
+<section id="projects" class="bg-white py-20">
 
 <div class="max-w-6xl mx-auto px-6">
 
-<h2 class="text-3xl font-bold mb-10">Projects</h2>
+<h2 class="text-4xl font-bold mb-4">
+Featured Projects
+</h2>
+
+<p class="text-gray-600 mb-12 text-lg">
+Projects focused on artificial intelligence, computer vision,
+mathematical modeling and real-world impact.
+</p>
 
 <div class="grid md:grid-cols-3 gap-8">
 
-<div class="bg-gray-50 p-6 rounded-xl shadow">
+<!-- PROJECT 1 -->
 
-<h3 class="font-bold text-xl mb-2">
+<div class="bg-gray-50 p-8 rounded-2xl shadow card-hover">
+
+<div class="mb-4">
+<span class="bg-blue-100 text-blue-700 text-sm px-3 py-1 rounded-full">
+Computer Vision
+</span>
+</div>
+
+<h3 class="font-bold text-2xl mb-4">
 3D Reconstruction with COLMAP
 </h3>
 
-<p class="text-gray-600">
-Structure-from-Motion pipeline for reconstructing 3D scenes from images
-using COLMAP and Python.
+<p class="text-gray-600 mb-5 leading-relaxed">
+Developed a Structure-from-Motion pipeline capable of reconstructing
+3D environments from image sequences using COLMAP and Python.
 </p>
+
+<div class="space-y-2 mb-6 text-sm text-gray-700">
+
+<p>✔ Generated accurate 3D scene reconstructions</p>
+<p>✔ Improved camera pose estimation workflows</p>
+<p>✔ Integrated Open3D visualization pipelines</p>
 
 </div>
 
-<div class="bg-gray-50 p-6 rounded-xl shadow">
+<div class="flex flex-wrap gap-3">
 
-<h3 class="font-bold text-xl mb-2">
+<a href="#"
+class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition text-sm">
+View Project
+</a>
+
+<a href="#"
+class="border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-100 transition text-sm">
+Code
+</a>
+
+<a href="#"
+class="border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-100 transition text-sm">
+Results
+</a>
+
+</div>
+
+</div>
+
+<!-- PROJECT 2 -->
+
+<div class="bg-gray-50 p-8 rounded-2xl shadow card-hover">
+
+<div class="mb-4">
+<span class="bg-cyan-100 text-cyan-700 text-sm px-3 py-1 rounded-full">
+AI & Quality Control
+</span>
+</div>
+
+<h3 class="font-bold text-2xl mb-4">
 Clothing Anomaly Detection
 </h3>
 
-<p class="text-gray-600">
-Computer vision system to detect defects in clothing using classical
-image processing and machine learning techniques.
+<p class="text-gray-600 mb-5 leading-relaxed">
+Built a computer vision system capable of identifying defects and
+anomalies in clothing using classical image processing and machine
+learning techniques.
 </p>
+
+<div class="space-y-2 mb-6 text-sm text-gray-700">
+
+<p>✔ Automated defect detection process</p>
+<p>✔ Reduced manual inspection dependency</p>
+<p>✔ Improved quality control efficiency</p>
 
 </div>
 
-<div class="bg-gray-50 p-6 rounded-xl shadow">
+<div class="flex flex-wrap gap-3">
 
-<h3 class="font-bold text-xl mb-2">
+<a href="#"
+class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition text-sm">
+View Project
+</a>
+
+<a href="#"
+class="border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-100 transition text-sm">
+Images
+</a>
+
+<a href="#"
+class="border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-100 transition text-sm">
+Code
+</a>
+
+</div>
+
+</div>
+
+<!-- PROJECT 3 -->
+
+<div class="bg-gray-50 p-8 rounded-2xl shadow card-hover">
+
+<div class="mb-4">
+<span class="bg-indigo-100 text-indigo-700 text-sm px-3 py-1 rounded-full">
+Smart Cities
+</span>
+</div>
+
+<h3 class="font-bold text-2xl mb-4">
 Smart Cities Predictive Analytics
 </h3>
 
-<p class="text-gray-600">
-Data-driven models for urban analytics and predictive decision support
-systems for smart city platforms.
+<p class="text-gray-600 mb-5 leading-relaxed">
+Designed predictive analytics models for smart city environments
+using urban data, optimization algorithms and intelligent decision systems.
 </p>
+
+<div class="space-y-2 mb-6 text-sm text-gray-700">
+
+<p>✔ Enhanced data-driven urban planning</p>
+<p>✔ Supported predictive decision-making</p>
+<p>✔ Optimized analytical workflows</p>
 
 </div>
 
+<div class="flex flex-wrap gap-3">
+
+<a href="#"
+class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition text-sm">
+View Project
+</a>
+
+<a href="#"
+class="border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-100 transition text-sm">
+Dashboard
+</a>
+
+<a href="#"
+class="border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-100 transition text-sm">
+Results
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements" class="max-w-6xl mx-auto px-6 py-20">
+
+<h2 class="text-4xl font-bold mb-12">
+Achievements
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white p-8 rounded-2xl shadow card-hover">
+<h3 class="text-5xl font-bold text-blue-600 mb-4">AI</h3>
+<p class="font-semibold text-lg mb-2">
+Advanced Intelligent Systems
+</p>
+<p class="text-gray-600">
+Developed machine learning and computer vision solutions focused
+on automation, optimization and predictive analytics.
+</p>
+</div>
+
+<div class="bg-white p-8 rounded-2xl shadow card-hover">
+<h3 class="text-5xl font-bold text-blue-600 mb-4">DATA</h3>
+<p class="font-semibold text-lg mb-2">
+Data-Driven Decision Making
+</p>
+<p class="text-gray-600">
+Created analytical systems capable of transforming large-scale
+data into actionable insights and measurable impact.
+</p>
+</div>
+
+<div class="bg-white p-8 rounded-2xl shadow card-hover">
+<h3 class="text-5xl font-bold text-blue-600 mb-4">3D</h3>
+<p class="font-semibold text-lg mb-2">
+Computer Vision & Reconstruction
+</p>
+<p class="text-gray-600">
+Implemented advanced reconstruction and visual analytics pipelines
+using COLMAP, OpenCV and Open3D technologies.
+</p>
 </div>
 
 </div>
@@ -137,48 +412,63 @@ systems for smart city platforms.
 
 <!-- SKILLS -->
 
-<section id="skills" class="max-w-5xl mx-auto px-6 py-16">
+<section id="skills" class="bg-white py-20">
 
-<h2 class="text-3xl font-bold mb-10">Skills</h2>
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-4xl font-bold mb-12">
+Technical Skills
+</h2>
 
 <div class="grid md:grid-cols-3 gap-8 text-gray-700">
 
-<div>
+<div class="bg-gray-50 p-8 rounded-2xl shadow-sm">
 
-<h3 class="font-semibold mb-3">Programming</h3>
+<h3 class="font-bold text-xl mb-5 text-blue-600">
+Programming
+</h3>
 
-<ul class="space-y-1">
+<ul class="space-y-3">
 <li>Python</li>
 <li>SQL</li>
 <li>JavaScript</li>
 <li>C++</li>
+<li>Git & Version Control</li>
 </ul>
 
 </div>
 
-<div>
+<div class="bg-gray-50 p-8 rounded-2xl shadow-sm">
 
-<h3 class="font-semibold mb-3">Data Science</h3>
+<h3 class="font-bold text-xl mb-5 text-blue-600">
+Data Science
+</h3>
 
-<ul class="space-y-1">
+<ul class="space-y-3">
 <li>Machine Learning</li>
 <li>Deep Learning</li>
 <li>Statistical Modeling</li>
 <li>Data Visualization</li>
+<li>Predictive Analytics</li>
 </ul>
 
 </div>
 
-<div>
+<div class="bg-gray-50 p-8 rounded-2xl shadow-sm">
 
-<h3 class="font-semibold mb-3">Tools</h3>
+<h3 class="font-bold text-xl mb-5 text-blue-600">
+Tools & Frameworks
+</h3>
 
-<ul class="space-y-1">
+<ul class="space-y-3">
 <li>TensorFlow / PyTorch</li>
 <li>OpenCV</li>
 <li>Scikit-learn</li>
-<li>Git / Docker</li>
+<li>Docker</li>
+<li>COLMAP / Open3D</li>
 </ul>
+
+</div>
 
 </div>
 
@@ -188,20 +478,39 @@ systems for smart city platforms.
 
 <!-- CV -->
 
-<section id="cv" class="bg-white py-16">
+<section id="cv" class="py-20 bg-gradient-to-r from-blue-600 to-cyan-600 text-white">
 
 <div class="max-w-4xl mx-auto text-center px-6">
 
-<h2 class="text-3xl font-bold mb-6">Curriculum Vitae</h2>
+<h2 class="text-4xl font-bold mb-6">
+Curriculum Vitae
+</h2>
 
-<p class="text-gray-600 mb-6">
-You can download my full CV below.
+<p class="text-lg mb-10 text-blue-100">
+Short professional overview before downloading the full CV.
 </p>
 
-<a href="cv.pdf"
-class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl text-left mb-10">
 
-Download CV
+<h3 class="font-bold text-2xl mb-4">
+Professional Summary
+</h3>
+
+<p class="leading-relaxed text-blue-50">
+Applied mathematician and data scientist with experience in machine learning,
+computer vision, predictive analytics and intelligent systems development.
+Strong background in mathematical modeling, optimization and data-driven
+solutions capable of solving complex real-world problems.
+Passionate about artificial intelligence, automation and high-impact
+technological innovation.
+</p>
+
+</div>
+
+<a href="cv.pdf"
+class="bg-white text-blue-700 font-semibold px-8 py-4 rounded-xl hover:bg-gray-100 transition shadow-lg inline-block">
+
+Download Full CV
 
 </a>
 
@@ -211,32 +520,82 @@ Download CV
 
 <!-- CONTACT -->
 
-<section id="contact" class="max-w-4xl mx-auto px-6 py-16 text-center">
+<section id="contact" class="max-w-5xl mx-auto px-6 py-20 text-center">
 
-<h2 class="text-3xl font-bold mb-6">Contact</h2>
+<h2 class="text-4xl font-bold mb-6">
+Let's Build Something Amazing Together
+</h2>
 
-<p class="text-gray-600 mb-6">
-Interested in collaborating or discussing data science opportunities?
-Feel free to reach out.
+<p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
+Interested in working together or discussing a data science opportunity?
+I am open to collaborating on innovative projects, AI solutions,
+computer vision systems and new analytical challenges.
 </p>
 
-<div class="space-y-2">
+<div class="grid md:grid-cols-2 gap-8 mb-10">
 
-<p>Email: your.email@email.com</p>
+<div class="bg-white p-8 rounded-2xl shadow-sm">
+
+<h3 class="font-bold text-xl mb-6 text-blue-600">
+Contact Information
+</h3>
+
+<div class="space-y-4 text-gray-700">
 
 <p>
-LinkedIn:
-<a href="#" class="text-blue-600">
+📧 your.email@email.com
+</p>
+
+<p>
+💼
+<a href="#" class="text-blue-600 hover:underline">
 linkedin.com/in/yourprofile
 </a>
 </p>
 
 <p>
-GitHub:
-<a href="#" class="text-blue-600">
+💻
+<a href="#" class="text-blue-600 hover:underline">
 github.com/yourusername
 </a>
 </p>
+
+</div>
+
+</div>
+
+<div class="bg-white p-8 rounded-2xl shadow-sm">
+
+<h3 class="font-bold text-xl mb-6 text-blue-600">
+Quick Actions
+</h3>
+
+<div class="flex flex-col gap-4">
+
+<a href="mailto:your.email@email.com"
+class="bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700 transition">
+
+Send Message
+
+</a>
+
+<a href="#"
+class="border border-blue-600 text-blue-600 py-3 rounded-xl hover:bg-blue-50 transition">
+
+View LinkedIn
+
+</a>
+
+<a href="#"
+class="border border-gray-300 py-3 rounded-xl hover:bg-gray-100 transition">
+
+Explore GitHub
+
+</a>
+
+</div>
+
+</div>
 
 </div>
 
@@ -244,10 +603,14 @@ github.com/yourusername
 
 <!-- FOOTER -->
 
-<footer class="bg-gray-900 text-gray-400 text-center py-6">
+<footer class="bg-gray-900 text-gray-400 text-center py-8">
+
+<p class="mb-2 font-semibold">
+Sebastian Plazas | Data Scientist
+</p>
 
 <p>
-© 2026 Sebastian Plazas — Data Scientist Portfolio
+© 2026 Sebastian Plazas — AI • Data Science • Computer Vision
 </p>
 
 </footer>
